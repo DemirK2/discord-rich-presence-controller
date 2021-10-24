@@ -42,7 +42,7 @@ public class SceneController : MonoBehaviour
         }
         if (Input.GetKeyDown("f8"))
         {
-            Application.OpenURL("https://youtu.be/dQw4w9WgXcQ");
+            OpenURL("https://youtu.be/dQw4w9WgXcQ");
         }
     }
 
@@ -90,5 +90,10 @@ public class SceneController : MonoBehaviour
     public void Disconnect()
     {
         discord.Disconnect();
+    }
+
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
     }
 }
